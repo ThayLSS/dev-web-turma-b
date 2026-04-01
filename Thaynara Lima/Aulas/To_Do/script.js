@@ -32,8 +32,12 @@ function iniciar () {
             //adicionar botão no itemde lista
          itemLista.appendChild(btnRemover);
 
-         
+            //Adicionar um evento de risco na lista
          itemLista.addEventListener("click", () => {
+            itemLista.classList.add("concluida");
+
+            // retira o evento de risco na lista
+        itemLista.addEventListener("click", () => {
             itemLista.classList.add("concluida");
 
          })
