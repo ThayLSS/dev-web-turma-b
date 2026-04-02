@@ -4,18 +4,39 @@
     <home-component />
     <hr />
     <HomeComponent />
+    <hr>
+    <UsuarioComponent/>
+    <hr>
+    <EstiloComponents/>
   </div>
 </template>
 
 <script>
 import HomeComponent from "./components/HomeComponent.vue";
+import UsuarioComponent from "./components/UsuarioComponent.vue";
+import EstiloComponents from "./components/EstiloComponents.vue";
 
 export default {
-  name: "App",
+name: "App",
+
   components: {
     HomeComponent,
+    UsuarioComponent,
+    EstiloComponents,
+  },
+
+  created() {
+    console.log("created");
+  },
+  mounted(){
+    console.log("mounted");
+  },
+  errorCaptured(){
+    console.log("errorCaptured");
   },
 };
+
+
 </script>
 
 <style>

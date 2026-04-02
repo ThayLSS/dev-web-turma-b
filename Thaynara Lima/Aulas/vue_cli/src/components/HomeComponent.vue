@@ -11,7 +11,7 @@ export default {
   name: "HomeComponent",
   data() {
     return {
-      nome: "Fernando",
+      nome: "Thaynara,",
     };
   },
 };
